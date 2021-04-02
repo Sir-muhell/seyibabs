@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>theSeyiBabs</title>
@@ -25,13 +25,19 @@
   <link rel="stylesheet" href="css/aos.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="shortcut icon" href="../img/core-img/llogo.png"> -->
+  <link rel="manifest" href="manifest.json">
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-  <div id="overlayer"></div>
-  
+  <!-- <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div> -->
 
 
   <div class="site-wrap">
@@ -52,7 +58,7 @@
         <div class="row align-items-center">
 
           <div class="col-6 col-xl-2">
-            <div class="mb-0 site-logo"><a href="index.html" class="mb-0">SEYIBABS<span class="text-primary">.</span> </a></div>
+            <div class="mb-0 site-logo"><a href="./index" class="mb-0"><strong>SEYI_BABS</strong><span class="text-primary">.</span> </a></div>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -61,10 +67,11 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="active"><a href="./index" class="nav-link">Home</a></li>
                 <li><a href="./about" class="nav-link">About</a></li>
-                <li><a href="./book" class="nav-link">My Books</a></li>
-                <li><a href="./symptoms" class="nav-link">Symptoms</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="./books" class="nav-link">My Books</a></li>
+                <li><a href="./events" class="nav-link">Events</a></li>
+                <li><a href="./class" class="nav-link">My Classes</a></li>
+                <li><a href="./fobia" class="nav-link">FOBIA</a></li>
+                <li><a href="./contact" class="nav-link">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -77,25 +84,27 @@
 
     </header>
 
-    
-
     <div class="hero-v1">
       <div class="container">
-        <div class="row ">
-          <div class="col-lg-6 mr-auto  text-lg-left">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 mr-auto text-lg-left">
             <span class="d-block subheading" style="color: grey">howdy!</span>
-            <h2 class="heading mb-3" style="font-size: 50px">I am <br><p style="font-size: 70px">Oluwaseyi <br> Babalola</p></h2>
-            <br><br><br>
+            
+            <h2 class="heading">I am <br>Oluwaseyi <br> Babalola</h2>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-sm-6   align-items-center" >
             <figure class="illustration">
-              <img style="margin-top: 50px; border-radius: " src="seyibabs.png" alt="Image" class="img-fluid">
+              <img src="seyibabs.png" alt="Image" class="img-fluid" >
             </figure>
           </div>
-          
+          <div class="col-lg-6"></div>
         </div>
       </div>
     </div>
+
+    
+
+    
 
 
     <!-- MAIN -->
@@ -480,10 +489,11 @@
             <h2 class="footer-heading mb-4">About</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cumque tenetur inventore veniam, hic vel ipsa necessitatibus ducimus architecto fugiat!</p>
             <div class="my-5">
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              <a href="https://www.facebook.com/seyi.ebenezer.52" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/Seyi_Babs1" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="https://www.instagram.com/theseyibabs/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="https://www.linkedin.com/in/seyi-babs-b79875184/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              <a href="mail-to:seyibabalola12@gmail.com" class="pl-3 pr-3"><span class="icon-envelope"></span></a>
             </div>
           </div>
           <div class="col-lg-8">
@@ -551,6 +561,31 @@
 
 
   <script src="js/main.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+</script>
+<script src="service-worker.js">
+        // Service worker for Progressive Web App
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js', {
+            scope: '.' // THIS IS REQUIRED FOR RUNNING A PROGRESSIVE WEB APP FROM A NON_ROOT PATH
+        }).then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    }
+</script>
 
 
 </body>
