@@ -1,21 +1,22 @@
 {
-  "short_name": "theSeyiBabs",
-  "name": "theSeyiBabs",
-  "description": "theSeyiBabs",
+  "short_name": "Seyi Babs",
+  "name": "Seyi Babs",
+  "description": "",
   "lang": "en",
   "icons": [
     {
-      "src": "img/core-img/llogo.png",
-      "sizes": "144x144",
-      "type": "image/png"
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
     }
   ],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "start_url": "./?v3&utm_source=web_app_manifest",
+  "background_color": "#FF0000",
+  "theme_color": "#FF0000",
+  "color": "#ffffff",
   "display": "standalone",
   "related_applications": [{
     "platform": "web",
-    "url": "https://theSeyiBabs.com.ng"
+    "url": "https://theseyibabs.com.ng"
   }]
 }
