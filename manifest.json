@@ -5,7 +5,7 @@
   "lang": "en",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "pwa.png",
       "type": "image/png",
       "sizes": "144x144"
     }
