@@ -1,12 +1,7 @@
-var CACHE_NAME = 'pwgen-cache-v1';
+var CACHE_NAME = 'pwgen-cache';
 var urlsToCache = [
-    'service-worker.js',
-    'manifest.json',
-    'css/style.css',
-    'js/default-assets/active.js',
-    'js/default-assets/classynav.js',
-    'js/jquery.min.js',
-    'img/core-img/llogo.png'
+    'index.html',
+    'contact.html'
 ];
 console.log('loading sw');
 
