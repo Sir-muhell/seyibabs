@@ -107,6 +107,17 @@ body:after {
   border-color: #6f42c1;
   color: #fff;
 }
+
+.btn.btn-prime {
+  background: white;
+  border-color: #6f42c1;
+  color: #6f42c1;
+}
+.btn.btn-prime:hover {
+  background: #6f42c1;
+  border-color: #6f42c1;
+  color: #fff;
+}
 .btn.btn-primary.btn-black--hover:hover {
   background: #666666;
   color: #fff;
@@ -827,6 +838,13 @@ body:after {
   color: #6f42c1;
   font-size: 90px;
 }
+
+@media (min-width: 676px) {
+  .booking {
+    margin-top: 70px
+  }
+}
+
 @media (max-width: 991.98px) {
   .hero-v1 .heading {
     font-size: 55px;

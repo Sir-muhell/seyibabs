@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>theSeyiBabs  | Contact</title>
+  <title>theSeyiBabs  | Book a Session</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta name="description" content="SeyiBabs | Contact Me">
+  <meta name="description" content="SeyiBabs | Book a Session">
   <meta name="keywords" content="Hello, I'm Seyi Babs. And this is me!">
   <meta name="theme-color" content="#f0ecf9"> 
 
@@ -83,8 +83,8 @@
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-6 text-center mx-auto">
-            <span class="d-block subheading">Contact Me</span>
-            <h1 class="heading mb-3">Let's connect</h1>
+            <span class="d-block subheading">Love my works?</span>
+            <h1 class="heading mb-3">Book a Session</h1>
             
           </div>
           
@@ -98,20 +98,21 @@
     <div class="site-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <form action="./submitted" data-netlify="true" >
+          <div class="col-lg-7">
+            <form action="./booked" data-netlify="true" >
+              <p>All <span style="color: red">*</span> fields are compulsory</p>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label for="fname">First name</label>
-                    <input type="text" name="From:" id="From:" value="Contact" hidden>
-                    <input type="text" id="first name" name="first name" class="form-control">
+                    <label for="fname">Full Name</label><span style="color: red">*</span>
+                    <input type="text" id="For:" name="from" value="Bookings" hidden>
+                    <input type="text" id="Full Name" name="Full Name" class="form-control" required>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label for="lname">Last name</label>
-                    <input type="text"  id="last name" name="last name" class="form-control">
+                    <label for="lname">Phone Number</label><span style="color: red">*</span>
+                    <input type="text"  id="Phone Number" name="Phone Number" class="form-control" required>
                   </div>
                 </div>
               </div>
@@ -119,8 +120,8 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="email">Email</label><span style="color: red">*</span>
+                    <input type="text" id="Eail" name="Email" class="form-control" required>
                   </div>
                 </div>
               </div>
@@ -128,8 +129,17 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" class="form-control">
+                    <label for="address">Physical Session? Address</label>
+                    <textarea name="Address" id="Address" class="form-control" cols="30" rows="2"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label for="subject">Subject</label><span style="color: red">*</span>
+                    <input type="text" id="subject" class="form-control" required>
                   </div>
                 </div>
               </div>
@@ -138,14 +148,14 @@
                 <div class="col-lg-12">
                   <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" class="form-control" cols="30" rows="4"></textarea>
+                    <textarea name="message" id="message" class="form-control" cols="30" rows="4" required></textarea>
                   </div>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-lg-6">
-                  <input type="submit" class="btn btn-primary" value="Send Message">
+                  <input type="submit" class="btn btn-primary" value="Book your session">
                   
           <br><br><br>
                 </div>
@@ -156,32 +166,8 @@
 
 
 
-          <div class="col-lg-5 ml-auto">
-            <h3 class="mb-3 side-title">Quick info</h3>
-            <div class="quick-contact">
-
-              <div class="d-flex">
-                <span class="icon-room"></span>
-                <address>
-                  Nigeria.
-                </address>
-              </div>
-              <div class="d-flex">
-                <span class="icon-phone"></span>
-                <a href="tel: +234 802 214 8004">+234 802 214 8004</a>
-              </div>
-              <div class="d-flex">
-                <span class="icon-envelope"></span>
-                <a href="mail-to: hello@theseyibabs.com.ng">hello@theseyibabs.com.ng</a>
-              </div>
-              <br>
-              <p class="mb-4"><a href="./book-a-session" class="btn btn-prime">Book a Session</a></p>
-              <!-- <div class="d-flex">
-                <span class="icon-globe"></span>
-                <a href="#">https://mywebsite.com</a>
-              </div> -->
-            </div>
-          </div>
+          <div class="col-lg-5 ml-auto mb-4">
+                <img src="6.jpg" alt="Image" class="img-fluid booking" style="border-radius: 30px">
         </div>
       </div>
     </div>
