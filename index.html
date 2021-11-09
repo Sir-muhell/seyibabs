@@ -322,6 +322,24 @@
 
   </div> <!-- .site-wrap -->
 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+         <a href="./bwb"><img src="bwb.jpeg" class="img-fluid ml-0 mr-0"></a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
@@ -333,6 +351,13 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      setTimeout(function() {
+    $('#myModal').modal();
+    }, 1000);
+    });
+</script>
   <script>
     if ('serviceWorker' in navigator) {
       console.log("Will the service worker register?");
