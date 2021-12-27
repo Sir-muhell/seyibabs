@@ -829,12 +829,6 @@ body:after {
   overflow: hidden;
 }
 
-@media (max-width: 991.98px) {
-  .hero-v1 {
-    padding: 8rem 0 22rem 0;
-  }
-}
-
 .hero-v1 .heading {
   font-weight: 900;
   color: #6f42c1;
