@@ -599,7 +599,8 @@ body:after {
 }
 
 .site-mobile-menu {
-  width: 300px;
+  width: 100%;
+  border-radius: 100px 0px 0px 0px;
   position: fixed;
   right: 0;
   z-index: 2000;
@@ -658,6 +659,7 @@ body:after {
 }
 .site-mobile-menu .site-mobile-menu-body {
   overflow-y: scroll;
+  margin-top: 24vh;
   -webkit-overflow-scrolling: touch;
   position: relative;
   padding: 0 20px 20px 20px;
@@ -841,7 +843,7 @@ body:after {
 
 @media (min-width: 676px) {
   .booking {
-    margin-top: 70px
+    margin-top: 70px;
   }
 }
 
